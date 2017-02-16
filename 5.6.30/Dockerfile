@@ -38,8 +38,6 @@ RUN docker-php-ext-install bcmath mcrypt zip bz2 mbstring pcntl xsl intl && \
 RUN pecl install xdebug-2.5.0 && \
     docker-php-ext-enable xdebug
 
-RUN pecl install apcu && \
-    docker-php-ext-enable apcu
 
 RUN echo "memory_limit=-1" > $PHP_INI_DIR/conf.d/memory-limit.ini
 
