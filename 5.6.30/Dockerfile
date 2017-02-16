@@ -35,7 +35,7 @@ RUN docker-php-ext-install bcmath mcrypt zip bz2 mbstring pcntl xsl intl && \
     docker-php-ext-install mbstring pdo pdo_mysql zip
 
 
-RUN pecl install xdebug-2.5.0 && \
+RUN pecl install xdebug && \
     docker-php-ext-enable xdebug
 
 
